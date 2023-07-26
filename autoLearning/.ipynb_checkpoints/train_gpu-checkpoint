@@ -1,0 +1,60 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "5690d770-9905-45a4-b95c-35762c8eeb70",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "GPU is available\n"
+     ]
+    }
+   ],
+   "source": [
+    "import tensorflow as tf\n",
+    "\n",
+    "# 获取所有 GPU 设备\n",
+    "gpus = tf.config.list_physical_devices('GPU')\n",
+    "\n",
+    "# 如果设备列表不为空，则表示有 GPU 可用\n",
+    "if gpus:\n",
+    "    print('GPU is available')\n",
+    "else:\n",
+    "    print('GPU is not available')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1897827d-26e6-478c-9a7b-3b2253311145",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "torch-gpuprivate",
+   "language": "python",
+   "name": "torch-gpuprivate"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.11"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
